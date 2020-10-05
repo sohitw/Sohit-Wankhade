@@ -1,37 +1,126 @@
-## Welcome to GitHub Pages
+<html>
+ <head>
+ 
 
-You can use the [editor on GitHub](https://github.com/sohitw/Sohit_Wankhade/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing:border-box;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-### Markdown
+.container {
+  padding: 64px;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
 
-```markdown
-Syntax highlighted code block
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
 
-# Header 1
-## Header 2
-### Header 3
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
 
-- Bulleted
-- List
+.large-font {
+  font-size: 48px;
+}
 
-1. Numbered
-2. List
+.xlarge-font {
+  font-size: 64px
+}
 
-**Bold** and _Italic_ and `Code` text
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
 
-[Link](url) and ![Image](src)
-```
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+</style>
+</head>
+<body>
 
-### Jekyll Themes
+<div style="text-align:center">
+  <h2>Responsive Zig Zag Layout Example</h2>
+  <p>Resize the browser window to see the effect.</p>
+</div>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sohitw/Sohit_Wankhade/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<!-- The App Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>The App</b></h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b>Why buy it?</b></h1>
+      <p><span style="font-size:36px">Take photos like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <button class="button">Download Application</button>
+    </div>
+    <div class="column-33">
+        <img src="/w3images/img_app.jpg" width="335" height="471">
+    </div>
+  </div>
+</div>
 
-### Support or Contact
+<!-- Clarity Section -->
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="/w3images/app5.jpg" alt="App" width="335" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Clarity</b></h1>
+      <h1 class="large-font" style="color:red;"><b>Pixels, who?</b></h1>
+      <p><span style="font-size:24px">A revolution in resolution.</span> Sharp and clear photos with the world's best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <button class="button" style="background-color:red">Read More</button>
+    </div>
+  </div>
+</div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!-- The App Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>The App</b></h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b>Why buy it?</b></h1>
+      <p><span style="font-size:36px">Take photos like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <button class="button">Download Application</button>
+    </div>
+    <div class="column-33">
+        <img src="/w3images/img_app.jpg" width="335" height="471" >
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
